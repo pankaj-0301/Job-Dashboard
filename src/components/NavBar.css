@@ -1,0 +1,162 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 1px 5px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.mainbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    height: 50px;
+
+}
+
+.topbar {
+    border-bottom: 1px solid #ccc;
+}
+.bottombar{
+    height:0px;
+}
+
+.logo {
+    padding: 10px 20px;
+    background-color: rgb(230, 223, 223);
+}
+
+.logo h7 {
+    color: red;
+    font-weight: 500;
+}
+
+.center-icons {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    height: 50px;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+.icon-link img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.icons-right {
+    display: flex;
+    align-items: center;
+}
+
+.notification-dropdown {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.notification-dropdown .icon {
+    font-size: 20px;
+}
+
+.selected-company {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.selected-company img {
+    width: 30px;
+    height: 25px;
+    margin-right: 0px;
+}
+
+.dropdown-icon {
+    margin-left: 5px;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+    top: 30px;
+    right: 0;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.company-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.company-item img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.job {
+    background-color: rgb(225, 34, 34);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.text {
+    color: white;
+}
+
+.bottombar nav {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.mainbar-link {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    position: relative;
+}
+
+.mainbar-link.active {
+    color: red;
+    text-decoration: none;
+}
+
+.mainbar-link.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-radius: 10px;
+}
